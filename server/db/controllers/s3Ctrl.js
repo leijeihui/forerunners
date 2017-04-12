@@ -1,6 +1,6 @@
 var fs = require('fs');
 var S3FS = require('s3fs');
-var s3fsImpl = new S3FS('forerunnersequipmentco', {
+var s3fsImpl = new S3FS('forerunnersequipmentcompany', {
   accessKeyId: process.env.S3_ACCESS_ID,
   secretAccessKey: process.env.S3_SECRET_ACCESS_KEY
   

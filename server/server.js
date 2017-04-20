@@ -8,6 +8,7 @@ const routes = require('./routes/routes.js');
 
 const app = express();
 const port = process.env.PORT || 8000;
+const multipartyMiddleware = multiparty();
 
 app.use(require('express-session')({
   key: 'session',

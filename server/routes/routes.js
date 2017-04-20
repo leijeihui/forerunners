@@ -1,5 +1,7 @@
-const router = require('express').Router;
-const adminCtrl = require('/../controllers/adminCtrl.js');
+const routes = require('express').Router();
+const adminCtrl = require('../db/controllers/adminCtrl.js');
 
-router.post('/login', adminCtrl.login);
-router.post('/signup', adminCtrl.signup);
+routes.post('/login', adminCtrl.login);
+routes.post('/signup', adminCtrl.signup);
+
+module.exports = routes;
